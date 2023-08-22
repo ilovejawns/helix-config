@@ -1,0 +1,56 @@
+theme = "ayu_mirage"
+
+[editor]
+line-number = "relative"
+mouse = true
+bufferline = "always"
+auto-save = true # save when window looses focus
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+tab = "→"
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+y = "yank_joined_to_clipboard" # uses system clipboard
+p = ["paste_clipboard_after"]
+
+[keys.normal."["]
+"[" = "goto_previous_buffer"
+
+
+[keys.normal."]"]
+"]" = "goto_next_buffer"
+
+[keys.select]
+y = "yank_joined_to_clipboard"
+p = ["replace_selections_with_clipboard"]
+
+[editor.statusline]
+left = ["mode","file-name", "file-modification-indicator", "spinner"]
+#center = ["file-base-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
