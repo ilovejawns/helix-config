@@ -1,0 +1,7 @@
+[[language]]
+name = "php"
+auto-format = true
+
+[[language]]
+name = "html"
+auto-format = true
